@@ -55,6 +55,8 @@ export const VictorStyled = styled.section`
     .victor-name {
     font-size: 64px;
     margin: 10px 0;
+    display: flex;
+    justify-content: center;
     }
   }
 
@@ -80,6 +82,8 @@ export const VictorStyled = styled.section`
     .victor-name {
     font-size: 72px;
     margin: 10px 0;
+    display: flex;
+    justify-content: center;
     }
 
     button {
@@ -116,6 +120,8 @@ export const VictorStyled = styled.section`
     .victor-name {
     font-size: 64px;
     margin: 10px 0;
+    display: flex;
+    justify-content: center;
     }
   }
     @media ${(props) => props.theme.breakpoints.xl} {
