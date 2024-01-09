@@ -9,7 +9,7 @@ export const About = () => {
       <GradientText text="Sobre" classes="about-heading" />
       <section className="about-txt">
         <p>
-          Tenho 31 anos, sou nascido e criado em São Paulo Sou uma pessoa muito
+          Tenho 31 anos, sou nascido e criado em São Paulo, Sou uma pessoa muito
           caseira, escuto todo tipo de música, mas gosto principalmente de rock.
           Adoro jogar, assistir filmes e séries (principalmente fantasia
           medieval), ler livros e claro, programar.
