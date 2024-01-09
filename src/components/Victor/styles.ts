@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const VictorStyled = styled.section`
   display: flex;
@@ -31,7 +31,7 @@ export const VictorStyled = styled.section`
   }
 
   .victor-txt {
-    color: ${props => props.theme.colors.textColor};
+    color: ${(props) => props.theme.colors.textColor};
     font-size: 22px;
   }
 
@@ -41,7 +41,7 @@ export const VictorStyled = styled.section`
     margin: 10px 0;
   }
 
-    @media ${(props) => props.theme.breakpoints.sm} {
+  @media ${(props) => props.theme.breakpoints.sm} {
     margin: 0 auto;
 
     img {
@@ -49,14 +49,14 @@ export const VictorStyled = styled.section`
     }
 
     .victor-txt {
-    color: ${props => props.theme.colors.textColor};
-    font-size: 32px;
+      color: ${(props) => props.theme.colors.textColor};
+      font-size: 32px;
     }
     .victor-name {
-    font-size: 64px;
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
+      font-size: 64px;
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
     }
   }
 
@@ -76,14 +76,14 @@ export const VictorStyled = styled.section`
     }
 
     .victor-txt {
-    color: ${props => props.theme.colors.textColor};
-    font-size: 40px;
+      color: ${(props) => props.theme.colors.textColor};
+      font-size: 40px;
     }
     .victor-name {
-    font-size: 72px;
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
+      font-size: 72px;
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
     }
 
     button {
@@ -98,7 +98,7 @@ export const VictorStyled = styled.section`
     img {
       width: 80vh;
     }
-    
+
     article {
       margin-left: 0px;
       font-size: 22px;
@@ -114,20 +114,20 @@ export const VictorStyled = styled.section`
     }
 
     .victor-txt {
-    color: ${props => props.theme.colors.textColor};
-    font-size: 32px;
+      color: ${(props) => props.theme.colors.textColor};
+      font-size: 32px;
     }
     .victor-name {
-    font-size: 64px;
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
+      font-size: 64px;
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
     }
   }
-    @media ${(props) => props.theme.breakpoints.xl} {
+  @media ${(props) => props.theme.breakpoints.xl} {
     flex-direction: row;
     margin: 0 auto;
-    margin-top: 25px;
+    margin-top: 100px;
 
     img {
       width: 80vh;

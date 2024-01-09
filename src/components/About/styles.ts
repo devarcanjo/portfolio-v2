@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const AboutStyled = styled.section`
   margin: 0 auto;
@@ -40,4 +40,4 @@ export const AboutStyled = styled.section`
   }
   @media ${(props) => props.theme.breakpoints.xl} {
   }
-`
+`;

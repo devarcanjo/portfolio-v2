@@ -3,7 +3,11 @@ import styled from 'styled-components';
 export const Wrapper = styled.div `
 
   .section-spacing {
-    margin-bottom: 5vh;
+    margin-bottom: 15vh;
+  }
+
+  .section-spacing-about {
+    margin-bottom: 10vh;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     max-width: 90vw;

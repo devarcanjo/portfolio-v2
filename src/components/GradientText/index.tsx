@@ -1,4 +1,4 @@
-import { GradientH1 } from './styles';
+import { GradientH1 } from "./styles";
 
 interface GradientTextPros {
   text: string;
@@ -6,10 +6,5 @@ interface GradientTextPros {
 }
 
 export const GradientText = ({ text, classes }: GradientTextPros) => {
-  return (
-    <GradientH1 className={ classes }>
-      {text}
-    </GradientH1>
-  )
-}
-
+  return <GradientH1 className={classes}>{text}</GradientH1>;
+};

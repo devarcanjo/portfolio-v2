@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 interface NavbarProps {
-  showNavbar: boolean; 
+  showNavbar: boolean;
 }
 
 export const HeaderStyled = styled.header`
-  background: ${props => props.theme.colors.darkPurple};
+  background: ${(props) => props.theme.colors.darkPurple};
   height: 60px;
   width: 100%;
   display: flex;
@@ -14,8 +14,7 @@ export const HeaderStyled = styled.header`
 `;
 
 export const ButtonIcon = styled.button`
-
-  background: ${props => props.theme.colors.darkPurple};
+  background: ${(props) => props.theme.colors.darkPurple};
   margin: 0px 10px;
   border: none;
 `;
@@ -27,7 +26,7 @@ export const HeaderSpacing = styled.div`
 
 export const HeaderDesktop = styled.header`
   width: 100%;
-  background: ${props => props.theme.colors.darkPurple};
+  background: ${(props) => props.theme.colors.darkPurple};
   height: 80px;
   position: fixed;
   top: 0;
@@ -49,13 +48,13 @@ export const HeaderDesktop = styled.header`
   div a {
     border-radius: 5px;
     padding: 10px;
-    color: ${props => props.theme.colors.textColor};
+    color: ${(props) => props.theme.colors.textColor};
     font-size: 24px;
     transition: all 500ms ease-in-out;
   }
-  
+
   div a:hover {
-    background-color: ${props => props.theme.colors.lightPurple2};
+    background-color: ${(props) => props.theme.colors.lightPurple2};
   }
 
   div a.logo:hover {
@@ -73,26 +72,24 @@ export const HeaderDesktop = styled.header`
     justify-content: space-between;
     gap: 40px;
   }
-
 `;
 
 export const NavLine = styled.div`
   background-color: white;
-  border:1px solid black;
+  border: 1px solid black;
   width: 60px;
 `;
 
-
-
 export const Navbar = styled.nav<NavbarProps>`
   position: absolute;
-  
-  background-color: ${props => props.theme.colors.lightPurple};
+
+  background-color: ${(props) => props.theme.colors.lightPurple};
   width: 220px;
   height: 100vh;
-  left: ${props => props.showNavbar ? '0px' : '-220px'};
+  left: ${(props) => (props.showNavbar ? "0px" : "-220px")};
   transition: all 0.5s ease-in-out;
-  box-shadow: ${props => props.showNavbar && '10px 5px 20px 12px rgba(0,0,0,0.53)'};
+  box-shadow: ${(props) =>
+    props.showNavbar && "10px 5px 20px 12px rgba(0,0,0,0.53)"};
 
   button {
     background-color: inherit;
@@ -108,7 +105,7 @@ export const Navbar = styled.nav<NavbarProps>`
     height: 100%;
   }
 
-  section.nav-items{
+  section.nav-items {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -128,10 +125,8 @@ export const Navbar = styled.nav<NavbarProps>`
   section a {
     display: flex;
     font-size: 24px;
-    color: ${props => props.theme.colors.textColor};
+    color: ${(props) => props.theme.colors.textColor};
     justify-content: flex-start;
     gap: 20px;
-
   }
-
 `;

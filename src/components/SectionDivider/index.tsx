@@ -1,8 +1,5 @@
-import { GradientDivider } from './styles';
+import { GradientDivider } from "./styles";
 
 export const SectionDivider = () => {
-  return (
-    <GradientDivider className='section-divider'/>
-  )
+  return <GradientDivider className="section-divider" />;
 };
-
