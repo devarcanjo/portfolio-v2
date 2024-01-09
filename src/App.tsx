@@ -1,14 +1,18 @@
 import { Theme } from "./styles/theme";
 import { Header } from "./components/Header";
-import { Wrapper } from "./AppStyle";
+import { TextSection, Wrapper } from "./AppStyle";
 import { Victor } from "./components/Victor";
+import { About } from "./components/About";
 
 const App = () => {
   return (
     <Theme>
       <Header />
       <Wrapper>
-      <Victor />
+        <Victor />
+        <TextSection>
+          <About />
+        </TextSection>
       </Wrapper>
     </Theme>
   );
