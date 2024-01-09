@@ -2,28 +2,19 @@ import StyledTechnologies from "./styles";
 import { SectionDivider } from "../SectionDivider";
 import { GradientText } from "../GradientText";
 import { TechIcon } from "../TechIcon";
+import data from "../../data/techs";
 
-interface techProps {
-  text: string;
-  icon: React.ElementType;
-  doc: string;
-}
-
-interface technologiesProps {
-  tech: techProps[];
-}
-
-export const Technologies = ({ tech }: technologiesProps) => {
+export const Technologies = () => {
   return (
     <StyledTechnologies id="technologies" className="section-spacing">
       <SectionDivider />
       <GradientText text="Tecnologias" classes="tech-heading" />
       <section>
-        {tech.map((tech) => (
+        {data.map((tech) => (
           <TechIcon
             key={tech.text}
             text={tech.text}
-            Icon={tech.icon}
+            Icon={tech.Icon}
             doc={tech.doc}
           />
         ))}
