@@ -33,6 +33,7 @@ const Contact: React.FC<ContactProps> = () => {
 
   const SERVICE_ID = "service_5zhjoeq";
   const TEMPLATE_ID = "template_ghb6xrv";
+  const USER_ID = "T0hvB3F5UpggmxJfe";
 
   const [toSend, setToSend] = useState(TO_SEND_INITIAL_STATE);
 
@@ -77,7 +78,7 @@ const Contact: React.FC<ContactProps> = () => {
 
   const sendForm = (event: FormEvent) => {
     event.preventDefault();
-    send(SERVICE_ID, TEMPLATE_ID, toSend)
+    send(SERVICE_ID, TEMPLATE_ID, toSend, USER_ID)
       .then((response) => {
         emailSent("success", {
           p1: "Enviado com sucesso! ✔️",
@@ -162,7 +163,7 @@ const Contact: React.FC<ContactProps> = () => {
         )}
         <GradientBtn
           text={"Enviar"}
-          onClickFunc={() => sendForm}
+          onClickFunc={sendForm}
           disabled={!validForm}
         />
         {emailStatus !== "none" && (

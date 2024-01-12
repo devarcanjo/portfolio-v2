@@ -3,7 +3,9 @@ import { GradientBtnStyled } from "./styles";
 interface GradientBtnPros {
   text: string;
   disabled?: boolean;
-  onClickFunc?: () => void;
+  onClickFunc: (
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => void;
 }
 
 export const GradientBtn = ({
