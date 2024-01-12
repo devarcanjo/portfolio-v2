@@ -4,17 +4,18 @@ import { TextSection, Wrapper } from "./AppStyle";
 import { Victor } from "./components/Victor";
 import { About } from "./components/About";
 import { Technologies } from "./components/Technologies";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
     <Theme>
       <Header />
       <Wrapper>
-        S
         <Victor />
         <TextSection>
           <About />
           <Technologies />
+          <Contact />
         </TextSection>
       </Wrapper>
     </Theme>
