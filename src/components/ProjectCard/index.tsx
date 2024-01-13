@@ -1,4 +1,4 @@
-import { ProjectCardStyled, TechSpan, Link } from "./stttyles";
+import { ProjectCardStyled, TechSpan, Link } from "./styles";
 import * as bsIcons from "react-icons/bs";
 import * as mdIcons from "react-icons/md";
 
@@ -10,7 +10,7 @@ interface projectCardPros {
   description: string;
 }
 
-const ProjectCard = ({
+export const ProjectCard = ({
   image,
   technologies,
   githubLink,
@@ -41,5 +41,3 @@ const ProjectCard = ({
     </ProjectCardStyled>
   );
 };
-
-export default ProjectCard;
