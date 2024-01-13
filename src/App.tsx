@@ -5,6 +5,7 @@ import { Victor } from "./components/Victor";
 import { About } from "./components/About";
 import { Technologies } from "./components/Technologies";
 import Contact from "./components/Contact";
+import { Projects } from "./components/Projects";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <TextSection>
           <About />
           <Technologies />
+          <Projects />
           <Contact />
         </TextSection>
       </Wrapper>
