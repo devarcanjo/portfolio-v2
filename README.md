@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+# Minha página de porfólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Seja muito bem vindo ao projeto da minha página de portfólio!
 
-Currently, two official plugins are available:
+## 🚧Estamos em obra🚧
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Neste momento o site ainda está em desenvolvimento! 
 
-## Expanding the ESLint configuration
+Estou utilizando `React`, com `React Hooks` e `styled-components` para implementar o site!
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Caso queira instalar e ver como está ficando o código do projeto, realize os seguintes passos
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+```bash
+git clone https://github.com/devarcanjo/portfolio-v2.git
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+cd portfolio-v2.git
+
+npm install
+
+npm start
+````
+Agora é só abrir o seu navegador e  a página deve estar lá na URL `http://localhost:3000/`
+
+---
+
+### 📝 Progresso
+
+
+#### 🛠️ Front-end
+- [x] Implementar Header
+- [x] Implementar seção Victor desktop
+- [x] Implementar seção Sobre desktop
+- [x] Implementar seção Tecnologias desktop
+- [x] Implementar seção Projetos mobile
+- [x] Implementar seção Projetos desktop
+- [x] Implementar seção Contato desktop
+- [x] Implementar Footer desktop
+
+
