@@ -1,6 +1,6 @@
 import { StyledProjects } from "./styles";
 import { ProjectCard } from "../ProjectCard";
-import projects from "../../data/projects";
+import { projects } from "../../data/projects";
 import { SectionDivider } from "../SectionDivider";
 import { GradientText } from "../GradientText";
 
