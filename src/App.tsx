@@ -6,6 +6,7 @@ import { About } from "./components/About";
 import { Technologies } from "./components/Technologies";
 import Contact from "./components/Contact";
 import { Projects } from "./components/Projects";
+import { Footer } from "./components/Footer";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Contact />
         </TextSection>
       </Wrapper>
+      <Footer />
     </Theme>
   );
 };
