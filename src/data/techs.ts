@@ -19,6 +19,11 @@ export const data = [
     doc: "https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript",
   },
   {
+    text: "NestJs",
+    Icon: SiIcons.SiNestjs,
+    doc: "https://nestjs.com/",
+  },
+  {
     text: "Jest",
     Icon: SiIcons.SiJest,
     doc: "https://jestjs.io/pt-BR/",
