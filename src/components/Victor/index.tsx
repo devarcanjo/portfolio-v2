@@ -2,11 +2,16 @@ import { GradientBtn } from "../GradientBtn";
 import { GradientText } from "../GradientText";
 import about from "../../img/about.png";
 import { VictorStyled } from "./styles";
+import { MediaQueryAllQueryable, useMediaQuery } from "react-responsive";
 
 export const Victor = () => {
+  const isPageWide = useMediaQuery({
+    query: "(min-width: 1024px)",
+  } as MediaQueryAllQueryable);
+
   return (
     <VictorStyled className="section-spacing">
-      <img src={about} alt="foto" />
+      {isPageWide ? <img src={about} alt="foto" /> : undefined}
       <article>
         <section>
           <p className="victor-txt">Olá mundo, eu sou</p>
@@ -19,7 +24,7 @@ export const Victor = () => {
           rel="noreferrer"
           data-testid="victor-linkedin-link"
         >
-          <GradientBtn text={"Saiba mais"} />
+          <GradientBtn text="Saiba mais" />
         </a>
       </article>
     </VictorStyled>
