@@ -7,14 +7,19 @@ import { Technologies } from "./components/Technologies";
 import Contact from "./components/Contact";
 import { Projects } from "./components/Projects";
 import { Footer } from "./components/Footer";
+import { MediaQueryAllQueryable, useMediaQuery } from "react-responsive";
 
 const App = () => {
+  const isLarge = useMediaQuery({
+    query: "(min-width: 1024px)",
+  } as MediaQueryAllQueryable);
+
   return (
     <Theme>
       <Header />
-      <Wrapper>
+      <Wrapper isLarge={isLarge}>
         <Victor />
-        <TextSection>
+        <TextSection isLarge={isLarge}>
           <About />
           <Technologies />
           <Projects />
