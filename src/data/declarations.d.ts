@@ -3,3 +3,8 @@ declare module "*.png" {
   const value: any;
   export default value;
 }
+
+declare module "*.woff2" {
+  const content: string;
+  export default content;
+}
