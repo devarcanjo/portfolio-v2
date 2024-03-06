@@ -13,7 +13,7 @@ export const projects = [
     image: netflixClone,
     technologies: ["ReactJs", "Redux ", "Sass (grid & flexbox)", "Swiper JS"],
     githubLink: "https://github.com/devarcanjo/netflixClone",
-    deployLink: "https://vercel.com/devarcanjo/netflix-clone",
+    deployLink: "https://netflix-clone-victor.vercel.app/",
     description:
       "Explore este clone do Netflix, uma aplicação que captura a essência do serviço original com ReactJs, Redux e estilos flexíveis com Sass.",
   },
